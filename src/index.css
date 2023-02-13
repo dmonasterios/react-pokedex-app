@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Press+Start+2P&family=Source+Code+Pro&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ########## GENERAL STYLES ########## */
+body{ background-color: #ddd; }
+#root{
+  @apply container mb-10 mx-auto pt-4 px-2 font-poppins lg:grid grid-cols-11;
+}
+/* ########## GENERAL STYLES ########## */
+
+
+/* ########## POKEMON TYPE STYLE ########## */
+/*
+  Pokemon Name:@components/PokemonName
+*/
+.bug{ @apply bg-[#8d9b10] }
+.dark{ @apply bg-[#705848] }
+.dragon { @apply bg-[#7038f8] }
+.electric { @apply bg-[#e79201] }
+.fairy { @apply bg-[#f0b6bc] }
+.fighting { @apply bg-[#c03028] }
+.fire { @apply bg-[#dd8443] }
+.flying { @apply bg-[#a890f0] }
+.ghost { @apply bg-[#705898] }
+.grass { @apply bg-[#3a984f] }
+.ground { @apply bg-yellow-600 }
+.ice { @apply bg-[#6dd3f5] }
+.normal { @apply bg-[#ca98a7] }
+.poison { @apply bg-[#a040a0] }
+.psychic{ @apply bg-[#f85888] }
+.rock { @apply bg-[#b8a038] }
+.steel { @apply bg-slate-500 }
+.water { @apply bg-[#3296fa] }
+/* ########## POKEMON TYPE STYLE ########## */
+
+/* ########## FORM STYLE ########## */
+  /*
+  Form Search:@components/FormSearch
+*/
+.form{
+  @apply grid col-span-12 bg-slate-400 p-4 mx-auto max-w-[750px];
+}
+
+.formBtn{
+  @apply p-1 border-4 font-medium;
+}
+.formBtnEnabled{
+  @apply bg-blue-400 border-blue-400 rounded-lg p-1 text-gray-50;
+}
+.formBtnDisabled{
+  @apply bg-gray-500 border-gray-500 rounded-lg opacity-75 p-1 text-gray-700;
+}
+.formBtnHover{
+  @apply bg-gray-50 text-blue-400 border-blue-400;
+}
+/* ########## FORM STYLE ########## */
+
+/* ########## POKEMON RESUME INFO STYLE ########## */
+
+/* ########## POKEMON RESUME INFO STYLE ########## */
+/*
+  Pokemon Resume Info: @components/PokemonResumeInfo
+*/
+.resumeInfo{
+  @apply mt-4 grid grid-cols-2 gap-y-2 mb-4 max-w-[400px] mx-auto;
+}
+
+/* ########## POKEMON STATS INFO STYLE ########## */
+/*
+  Pokemon Stats: @components/PokemonStats
+*/
+.hp { @apply bg-[#ff5959] }
+.attack { @apply bg-[#f5ac78] }
+.defense { @apply bg-[#fae078] }
+.special-attack { @apply bg-[#9db7f5] }
+.special-defense { @apply bg-[#a7db8d] }
+.speed { @apply bg-[#fa92b2] }
+.pokemonStats{
+  @apply bg-gray-300 p-2 grid grid-cols-5 mx-auto my-9  max-w-[750px];
+}
+/* ########## POKEMON STATS INFO STYLE ########## */
